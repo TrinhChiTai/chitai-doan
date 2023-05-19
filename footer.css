@@ -1,0 +1,38 @@
+.footer1{
+    width: 300px;
+    float: left;
+    margin-top: 30px;
+    margin-left:150px;
+    color: white;
+}
+
+.footer2{
+    width: 200px;
+    color: white;
+    float: left;
+    margin-top: 30px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+.footer3{
+    width: 200px;
+    margin-top: 30px;
+    float: left;
+    color: white;
+}
+.small{
+    height: 3px;
+    display: block;
+    background-color: gray;
+    margin: 1rem 0rem;
+    width: 100%;
+    max-width: 30px;
+}
+.footer4
+{
+    height: 10%;
+    margin-top: 278px;
+    background-color: rgb(77, 72, 72);
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+}

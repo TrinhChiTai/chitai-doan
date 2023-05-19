@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chethai.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+         <div class="i">
+            <img class="hinh1" src="ngua.jpg" alt="">
+            <div class="input">
+                    <input class="input-header" type="text" placeholder="  Tìm kiếm sản phẩm mong muốn" size="100">
+                    <i class="ti-search" ></i>
+                    <div class="icon">
+                    <i class="ti-bell" ></i>
+                    <i class="ti-shopping-cart"></i>
+                    <i class="ti-user"></i>
+            </div>
+        </div>
+    </div>
+    
+        <div class="i1">
+            <ul class="main-nav">
+                <li><a href="trangchu.html">Trang Chủ </a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="dangky.html">Đăng Ký</a></li>
+                <li><a href="sanpham.html">Sản Phẩm</a></li>
+                <li><a href="gioithieu.html">Liên Hệ </a></li>
+                <li><a href="giohang.html">Giỏ Hàng</a></li>
+            </ul>
+        </div>
+        
+        <div class="i2">
+            <div class="menu">
+                <ul>
+                    <li style="background-color: #45a;"><a href="#">DANH MỤC SẢN PHẨM</a> </li>                    
+                    <li><a href="#">TRÀ SỮA</a> 
+                        <ul class="sub-menu">
+                            <li><a href="trasuathaixanh.html">Thái&nbsp;Xanh</a> </li>
+                            <li><a href="thaido.html">Thái Đỏ</a> </li>
+                            <li><a href="trasuatruyenthong.html">Truyền&nbsp;Thống</a></li> 
+                         </ul>
+                    </li>
+                    <li><a href="#">KHÔ</a> 
+                        <ul class="sub-menu">
+                            <li><a href="khogabotoi.html">Gà</a> </li>
+                            <li><a href="khobo.html">Bò</a> </li>
+                         </ul>
+                    </li>
+                   
+                    <li><a href="#">Chè</a> 
+                        <ul class="sub-menu">
+                            <li><a href="khoaideo.html">Khoai&nbsp;Dẻo</a> </li>
+                         </ul>
+                    </li>
+                </ul>
+            </div></div>
+        <div class="i3">
+            <div class="hinhnen3">
+                <div class="sanphamtrangchu">
+                    <img src="cavienchien.jpg" width="100%" height="400px" >
+                   </div>
+                   <div class="sanphamtrangchu1">
+                    <h1>CÁ VIÊN CHIÊN</h1>
+                    <br></br>
+            <p >Nhà cung cấp:Khô Gà</p>
+            <br></br>
+            <p >
+                <i class="ti-star"></i>
+                <i class="ti-star"></i>
+                <i class="ti-star"></i>
+                <i class="ti-star"></i>
+                <i class="ti-star">(Đánh giá)</i>
+            </p>
+            <br></br>
+            <div class="c3">67.150đ</div>
+            <div class="c4"><del>70.000đ</del></div>
+            <div class="c5"> <b>-15%</b></div>
+            <br></br>
+                <br></br>
+                <p>Số lượng
+                    <span id="value">0</span>
+                    <div class="button-container">
+                        <button class="btn decrease">+</button>
+                        <button class="btn reset">Hủy</button>
+                        <button class="btn increase">-</button>
+                    </div>
+                 </p>
+                   </div>
+                  
+            </div>
+            
+         </div>
+        <div class="i4">Right</div>
+        <div class="i5" style="background-color: #3a3a3a;">
+            <div class="footer1">
+                <i class="ti-home" style="float: left; color: white;"></i>
+                <p> &nbsp; Đại học Công Nghiệp Thực Phẩm</p>
+                <i class="ti-headphone-alt" style="float: left;color: white;"></i>
+                <p>&nbsp; Tư vấn:1800 7878</p>
+                <i class="ti-email" style="float: left;color: white;"></i>
+                <p> &nbsp;Email:tiemney@gmail.com</p>
+                <i class="ti-twitter-alt" style="float: left;color: white;"></i>
+                <p> &nbsp;fb.com/FacebookforDevelopers/</p>
+            </div>
+            <div class="footer2">
+                <p >DANH MỤC</p>
+                <div class="small"></div>
+                <p style="border-bottom: 1px solid gray;">Trang chủ</p>
+                <p style="border-bottom: 1px solid gray;">Thực đơn</p>
+                <p>Liên hệ</p>
+            </div>
+            <div class="footer3">
+                <p >LIÊN HỆ</p>
+                <div class="small"></div>
+                <img src="lienhe.jpg" width="100%" height="100px" >
+            </div>
+            <div class="footer4">
+                <p>Copyright©Trịnh Chí Tài-2021</p>
+            </div>
+        </div>
+    </div>'
+    <script>
+        let count = 0;
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
+btns.forEach(function (btn) {
+btn.addEventListener("click", function (e) {
+const styles = e.currentTarget.classList;
+if (styles.contains("decrease")) {
+count++;
+} else if (styles.contains("increase")) {
+count--;
+} else {
+count = 0;
+}
+if (count > 0) {
+value.style.color = "green";
+}
+if (count < 0) {
+value.style.color = "red";
+}
+if (count === 0) {
+value.style.color = "#222";
+}
+value.textContent = count;
+});
+});
+    </script>'
+</body>
+</html>
